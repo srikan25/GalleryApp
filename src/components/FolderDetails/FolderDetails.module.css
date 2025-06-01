@@ -1,0 +1,52 @@
+.folder {
+  column-count: 3;
+  column-width: 33%;
+  padding: 0px 8px;
+}
+.pics {
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+.pics:hover {
+  transform: scale(1.03);
+  /* opacity: 0.9; */
+}
+.backArrow {
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  top: 28px;
+  left: 18px;
+  z-index: 1;
+  /* cursor: pointer; */
+}
+.addIcon {
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.srOnly {
+  cursor: pointer;
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+@media (max-width: 991px) {
+  .camera {
+    column-count: 2;
+  }
+}
+@media (max-width: 500px) {
+  .camera {
+    column-count: 1;
+    column-width: 100%;
+  }
+}

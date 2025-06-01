@@ -1,0 +1,26 @@
+.documents {
+  column-count: 3;
+  column-width: 33%;
+  padding: 0px 8px;
+}
+.pics {
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+.pics:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+@media (max-width: 991px) {
+  .documents {
+    column-count: 2;
+  }
+}
+@media (max-width: 500px) {
+  .documents {
+    column-count: 1;
+    column-width: 100%;
+  }
+}
